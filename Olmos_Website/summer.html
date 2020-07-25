@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <title>Olmos Ensemble | United States</title>
+    </head>
+    <body>
+        
+        <!-- Collapsable nav bar with title, links and small links [sidebar] -->
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="index.html" onclick="closeNav()">About Us</a>
+            <a href="current.html" onclick="closeNav()">Current Events</a>
+            <a href="artists.html" onclick="closeNav()">Artists & Guest Artists</a>
+            <a href="summer.html" onclick="closeNav()">Concert Schedule</a>
+            <a href="summer.html#recordings" onclick="closeNav()">Recordings</a>
+            <a href="donate.html" onclick="closeNav()">Donate</a>
+            <a href="contact.html" onclick="closeNav()">Contact Us</a>
+        </div>
+        
+        <div id="header">
+            
+            <!--<nav id="headerNav">
+                <ul id="headUL">
+                    <li class="navLinks"><a href="#about">About</a></li>
+                    <li class="navLinks"><a href="#current">Current Events</a></li>
+                    <li class="navLinks"><a href="#artists">Artists</a></li>
+                    <li class="navLinks"><a href="#summer">Concert Schedule</a></li>
+                    <li class="navLinks"><a href="#recordings">Recordings</a></li>
+                    <li class="navLinks"><a href="#donors">Supporters</a></li>
+                    <li class="navLinks"><a href="#donate">Donate</a></li>
+                    <li class="navLinks"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="navPics">
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
+                <a href="#summer"><img src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
+            </div>-->
+            <div id="buttonWrapper">
+                <a href="index.html"><img id="logo" src="images/OLMOS_logo_multicolor.png"></a>
+                <button id="phonemenu" class="openbtn" onclick="openNav()">Page Selector: ☰</button>
+                <p id="buttonP">Olmos Ensemble honors the tradition of chamber music in South Texas, shares its artistry with audiences across the region and celebrates excellence in music through <a href="summer.html">exciting and inspiring performances</a>.</p>
+            </div>
+        </div>
+    
+        <!-- Group pic -->
+        
+        <div id="fillerImage">
+            <img src="images/E04A0483_cropped.jpg">
+        </div>
+        
+        
+        <!-- summer series -->
+        
+        <div id="summer">
+            <h1>Season 26: "Virtuosos and Visionaries"<br>Summer Concert Series</h1>
+            <h3>All concerts will be live broadcated on KPAC 88.3 FM in San Antonio. We do not sell tickets, but reservations are required.<br><a href="mailto:olmosensemble@gmail.com?subject=Upcoming Concert Reservation&body=Hello! I would like to make a reservation for ----- tickets to the Olmos Ensemble concert on -----. Thank you!">Click Here to make a reservation!</a><br> All performances are held at <a href="https://www.google.com/maps/place/Laurel+Heights+United+Methodist+Church/@29.4530932,-98.4987385,17z/data=!3m1!4b1!4m5!3m4!1s0x865c5f68cbd37889:0xa26a80d57e16662d!8m2!3d29.4530932!4d-98.4965498">Laurel Heights United Methodist Church</a></h3>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2><a id="myBtn">Celebrating Beethoven</a></h2>
+                <p>August 2 @ 3:00 pm</p>
+                <h4>Beethoven</h4>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Sample text...</p>
+                </div>
+            </div>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2><a>Elegant Baroque</a></h2>
+                <p>August 9 @ 3:00 pm</p>
+                <h4>Bach, Handel, Telemann, Vivaldi, Goldberg</h4>
+            </div>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2><a>Summer Salon</a></h2>
+                <p>August 16 @ 3:00 pm</p>
+                <h4>Gaubert, Machado, Bach, Enescu, Ginastera, Villa-Lobos</h4>
+            </div>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2><a>Dreams of America</a></h2>
+                <p>August 23 @ 3:00 pm</p>
+                <h4>Bernstein, Rochberg, Persichetti, Rachmaninov, Gershwin</h4>
+            </div>
+        </div>
+        
+        
+        
+        <!-- season series -->
+        
+        <div id="season">
+            <h1>Season 26: "Virtuosos and Visionaries"<br>Season Concert Series</h1>
+            <h3 style="text-align: center;">Concert information will be available after September 1, 2020</h3>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2>Musical Menagerie</h2>
+                <p>September 21 @ 7:30 pm</p>
+            </div>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2>Mozart Cocktail</h2>
+                <p>January 25 @ 7:30 pm</p>
+            </div>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2>Plus One</h2>
+                <p>March 15 @ 7:30 pm</p>
+            </div>
+            <div class="shows">
+                <img src="images/testImg.jpg">
+                <h2>Windscapes</h2>
+                <p>May 17 @ 7:30 pm</p>
+            </div>
+        </div>
+        
+        <!-- testimonial 3 -->
+        
+        <div class="testimonials">
+            <h3 class="testText">"Consistently stylish, lively, and polished performances."</h3>
+            <h4>- Mike Greenberg</h4>
+        </div>
+        
+        <!-- recordings -->
+        
+        <div id="recordings">
+            <h1>Recordings</h1>
+            <div id="cd2">
+                <img src="images/MadeInFrance_OlmosEnsemble_CASE_W139_FRONT.jpg">
+                <h2 style="color: white;">Made in France (2019) · $20</h2>
+                <h2 style="color: white;">Listen to some Samples!</h2>
+                <audio id="franceAudio" controls>
+                    <source src="sound8.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div id="cd1">
+                <img src="images/CD%20cover%20Olmos_Live.jpg">
+                <h2 style="color: white;">Olmos Live (2017) · $15</h2>
+                <h2 style="color: white;">Listen to some Samples!</h2>
+                <audio id="olmosAudio" controls>
+                    <source src="sound1.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <h3 style="color: white; width: 95%; margin: 0 auto;"><strong><a href="mailto:olmosensemble@gmail.com">Email the Olmos Ensemble now</a> to reserve a CD!<br><br></strong></h3>
+            <h4>Our <em>Performance Saturday</em> Series on SoundCloud:<br><br><a class="prevconc" href="http://www.soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-25-2019">August 25, 2019 [1:30:20]</a> <a class="prevconc" href="http://www.soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-18-2019">August 18, 2019 [1:14:43]</a> <a class="prevconc" href="https://soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-11-19">August 11, 2019 [1:04:56]</a></h4>
+        </div>
+        
+        
+        <!-- cpyrght -->
+        
+        <div id="cpyrght">
+            <div id="navPics2">
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
+                <a href="summer.html"><img src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
+            </div>
+            <h4>© 2020 Olmos Ensemble, All Rights Reserved.</h4>
+            
+            <h3 style="color: white; margin: 0 auto 20px auto; padding: 0; font-size: 0.9em">P.O. Box 701864, San Antonio, TX, 78270<br><br>Site designed by <a href="http://www.creativej.com">Creative Juices Design, LLC</a> and developed by <a href="http://www.linkedin.com/in/joshua-shterenberg">Joshua Shterenberg</a></h3>
+        </div>
+        
+        <!-- JavaScript Links -->
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

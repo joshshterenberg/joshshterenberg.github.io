@@ -1,0 +1,623 @@
+@font-face {
+    font-family: robotoLight;
+    src: url(fonts/Roboto-Light.ttf);
+    font-family: cominfB;
+    src: url(fonts/CormorantInfant-Bold.ttf);
+    font-family: cominf;
+    src: url(fonts/CormorantInfant-BoldItalic.ttf);
+}
+body { 
+    margin: 0;
+    background-color: rgba(10,10,10,1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#header {
+    background-color: rgba(0,0,0,1);
+    padding: 5px;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+#header #logo {
+    max-width: 40%;
+    margin: 3% 0 1% 30%;
+    height: auto;
+    width: 40%;
+    float: left;
+    transition: 0.4s;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#headerNav {
+    width: 100%;
+    text-align: center;
+    margin: 21% 0 0 0; /* changing */
+    padding: 0;
+    display: inherit;
+}
+#headUL {
+    margin: 0 auto 2% auto; /* changing */
+    float: none;
+    padding: 0;
+    transition: 0.4s;
+    width: 80%;
+}
+.navLinks {
+    list-style-type: none;
+    display: inline;
+    color: white;
+    font-family: cominfB;
+    font-size: 1.5vw; /* changing */
+    text-decoration: none;
+    margin: 1% 1.5%;
+    padding: 0;
+    transition: 0.1s;
+}
+.navLinks a {
+    color: white;
+}
+.navLinks a:hover {
+    color: #70bf44;
+}
+a {
+    text-decoration: none;
+    color: #70bf44;
+    transition: 0.2s;
+}
+a:hover {
+    color: #faaa69;
+    cursor: pointer;
+}
+#navPics {
+    text-align: center;
+    display: inherit;
+    margin-top: 10px;
+}
+#navPics img {
+    width: 2.3%;
+    height: auto;
+    margin: 10px;
+}
+#fillerImage {
+    margin-top: 28vw;
+    margin-bottom: 0;
+    padding: 15px 0 0 0;
+}
+#fillerImage img {
+    background-color: green;
+    width: 100%;
+    height: auto;
+    margin: 0 0 -8px;
+    padding: 0;
+}
+#about {
+    background-color: rgba(0,98,66,1);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+h1 {
+    font-family: cominfB;
+}
+h2, h3, h4 {
+    font-family: robotoLight;
+}
+#current h2 {
+    font-size: 2.9vw;
+    padding-top: 50px;
+    margin-top: -20px;
+}
+#cpyrght h4 {
+    color: white;
+    margin: 0 auto;
+    padding: 25px 0 5px 0;
+    width: 95%;
+    font-family: robotoLight;
+}
+p {
+    font-size: min(140%, 2vw);
+    font-family: robotoLight;
+}
+h1 {
+    font-size: min(6vw, 400%);
+    margin: 0 auto;
+    padding: 5vh 0 2vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#about p {
+    margin: 0 auto;
+    padding: 0 0 50px;
+    width: 67%;
+    line-height: 1.5em;
+    color: white;
+    font-family: robotoLight;
+}
+
+.testimonials {
+    text-align: center;
+    background-color: rgba(0,0,0,1);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.testimonials h4, .testimonials2 h4 {
+    color: white;
+    margin-top: 5px;
+    padding-bottom: 35px;
+    font-size: min(1.5vw, 100%);
+}
+.testimonials h3 {
+    color: white;
+    font-size: min(2.2vw, 140%);
+    margin: 0;
+    padding: 50px 0 5px 0;
+    font-family: cominf;
+    font-size: 3vw;
+}
+#artists {
+    background-color: rgba(52,68,134,1);
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.smallPics {
+    display: inline-block;
+    margin: 0 0.6vw;
+    padding: 0;
+    width: 12%;
+    height: 30%;
+}
+
+.smallPics img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    color: white;
+    margin: 0;
+    font-size: 1.4vw;
+}
+.name a {
+    cursor: pointer;
+}
+
+.instrumentName {
+    margin: 0;
+    font-size: 1vw;
+    color: white;
+}
+
+#summer {
+    background-color: rgba(0, 118, 163, 1);
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#summer h3 {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: min(1.9vw, 20px);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.shows {
+    width: min(85%, 100vh);
+    background-color: rgba(255,255,255,0.1);
+    height: 138px;
+    padding-bottom: 5px;
+    margin: 20px auto;
+}
+.shows p {
+    font-size: min(auto, 1.5vw);
+    margin-bottom: 9px;
+    margin-top: 7px;
+}
+.shows h4 {
+    margin: 0;
+    padding: 0px;
+    white-space: nowrap;
+    font-size: max(1.4vw, 15px);
+    overflow: auto;
+}
+.shows img {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    float: left;
+    margin: 0 2vw 0 0;
+    padding: 0;
+}
+.shows h2 {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 300%;
+    overflow: auto;
+    padding: 14px 5px 0 0;
+}
+
+#fillerImage2 {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    height: 25vw;
+}
+#fillerImage2 img {
+    width: inherit;
+    height: inherit;
+}
+
+#season {
+    background-color: rgba(111,32,195,1);
+    height: auto;
+    padding-bottom: 20px;
+}
+#season h3 {
+    width: 80%;
+    text-align: left;
+    color: white;
+    font-size: min(1.9vw, 20px);
+    margin: 0 auto;
+    padding: 0;
+}
+#season a {
+    color: #70bf44;
+}
+#season a:hover {
+    color: #faaa69;
+}
+#summer a {
+    color: #70bf44;
+}
+#summer a:hover {
+    color: #faaa69;
+}
+
+#recordings {
+    background-color: rgba(0,98,66,1);
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+}
+#recordings h4 {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+.prevconc {
+    margin: 0 20px;
+}
+#recordings div {
+    width: 300px;
+    height: 370px;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 0;
+}
+#recordings div img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#donors {
+    background-color: rgb(50,50,50);
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+}
+#donors h2 {
+    color: white;
+    font-size: 3.5vw;
+    padding-top: 4vw;
+    margin: 0 0 15px 0;
+}
+
+.row {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#donate {
+    background-color: rgba(50,50,50,1);
+    height: auto;
+    padding-bottom: 20px;
+}
+#donate p, #donate h2 {
+    width: 70%;
+    color: white;
+    line-height: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#donate ul {
+    color: white;
+    width: 80%;
+    font-family: robotoLight;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+#donateButton {
+    background-color: #70bf44;
+    margin: 0 auto;
+    padding: 15px 5px;
+    text-align: center;
+    width: max(10%, 20vw);
+    transition: 0.4s;
+    font-size: 150%;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+}
+#donateButton:hover {
+    background-color: #faaa69;
+}
+
+#contact {
+    background-color: rgba(0,0,0,1);
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+}
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 100%;
+    font-family: monospace;
+    display: block;
+    height: 25px;
+    
+}
+input[type=submit] {
+    background-color: #70bf44;
+    color: #000;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 25%;
+    font-size: 20px;
+    transition: 0.3s;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: #faaa69;
+}
+#navPics2 img {
+    width: 2.3%;
+    margin: 0 1.5%;
+    height: auto;
+}
+
+#cpyrght {
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+    padding-top: 30px;
+}
+
+button {
+    border: none;
+    width: 40%;
+    height: 8%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #70bf44;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: #faaa69;
+    cursor: pointer;
+}
+
+#bigdonors img {
+    width: 15%;
+}
+
+#namelist h4 {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+#namelist p {
+    font-size: 100%;
+}
+
+#namelist {
+    -webkit-columns: 5 200px;
+    -moz-columns: 5 200px;
+    columns: 5 200px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+    -webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+    column-rule: 1px dotted #ddd;
+    padding: 0 20px;
+    text-align: left;
+    color: white;
+}
+
+#current {
+    text-align: center;
+    color: white;
+    background-color: rgb(50,50,50);
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #70bf44;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn {
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+}
+.openbtn:hover {
+    background-color: #70bf44;
+}
+
+#covidbutton {
+    background-color: inherit;
+    color: white;
+    border: none;
+    width: auto; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    margin: 20px 0;
+}
+#covidbutton:hover {
+    color: #70bf44;
+}
+
+#coviddetails {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#currentvids p {
+}
+
+.testimonials2 {
+    text-align: center;
+    background-color: rgba(50,50,50,1);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#buttonWrapper {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    height: auto;
+    padding-bottom: 0px;
+}
+
+#phonemenu {
+    margin: 3% 37% 1% 0;
+    padding: 4px 13px 5px 13px;
+    font-size: 3vw;
+    float: right;
+    border-radius: 8px;
+    transition: 0.4s;
+    width: auto;
+}
+
+#buttonP {
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+    margin-left: 6.5%;
+    padding: 15px 0;
+}
+
+audio {
+    padding-bottom: 30px;
+}
+
+
