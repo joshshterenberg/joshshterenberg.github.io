@@ -14,7 +14,13 @@ function offsetAnchor() {
 window.onload = function() {loadFunction()};
 function loadFunction() {
     if (screen.width <= 830) {
+        document.getElementById("header").style.paddingBottom = "20px";
         document.getElementById("phonemenu").style.display = "inline-block";
+        document.getElementById("phonemenu").style.margin = "0 2.5vw 0 0";
+        document.getElementById("phonemenu").style.fontSize = "4.5vw";
+        document.getElementById("phonemenu").innerHTML = "☰";
+        document.getElementById("buttonP").style.display = "none";
+        document.getElementById("hider").style.display = "inherit";
         var l = document.getElementsByTagName("p");
         for (var i = 0; i < l.length; i++) {
             l[i].style.fontSize = "12px";
@@ -25,13 +31,19 @@ function loadFunction() {
         }
         //document.getElementById("headerNav").style.display = "none";
         //document.getElementById("navPics").style.display = "none";
+        var r = document.getElementsByClassName("navClass");
+        for (var i = 0; i < r.length; i++) {
+            r[i].style.width = "8%";
+            r[i].style.margin = "0 3%";
+        }
         document.getElementById("logo").style.margin = "0 auto";
-        document.getElementById("logo").style.maxWidth = "20%";
+        document.getElementById("logo").style.padding = "0";
+        document.getElementById("logo").style.maxWidth = "25%";
         document.getElementById("donateButton").style.width = "200px";
         document.getElementById("subbutton").style.width = "50%";
         document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
-        document.getElementById("buttonWrapper").style.marginTop = "0";
+        document.getElementById("buttonWrapper").style.margin = "0 0 0 0";
         document.getElementById("buttonP").style.display = "none";
         var x = document.getElementsByClassName("smallPics");
         var y = document.getElementsByClassName("name");
@@ -96,11 +108,9 @@ function closeNav() {
 //Olmos CD
 var olmosElement = document.getElementById("olmosAudio");
 var olmosSources = [
-    "audio/sound1.mp3",
-    "audio/sound2.mp3",
-    "audio/sound3.mp3",
-    "audio/sound4.mp3",
-    "audio/sound5.mp3"
+    "audio/sound6.mp3",
+    "audio/sound7.mp3",
+    "audio/sound8.mp3"
 ];
 var activeElement = Math.floor((Math.random() * olmosSources.length));
 olmosElement.src = olmosSources[activeElement];
@@ -114,9 +124,11 @@ olmosElement.addEventListener('ended', function(e) {
 //Made in France CD
 var franceElement = document.getElementById("franceAudio");
 var franceSources = [
-    "audio/sound6.mp3",
-    "audio/sound7.mp3",
-    "audio/sound8.mp3"
+    "audio/sound1.mp3",
+    "audio/sound2.mp3",
+    "audio/sound3.mp3",
+    "audio/sound4.mp3",
+    "audio/sound5.mp3"
 ];
 var activeFrance = Math.floor((Math.random() * franceSources.length));
 franceElement.src = franceSources[activeFrance];
