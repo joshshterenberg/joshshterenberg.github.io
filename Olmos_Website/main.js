@@ -128,7 +128,7 @@ franceElement.addEventListener('ended', function(e) {
     franceElement.src = franceSources[activeFrance];
 });
 
-//Covid button actions
+//Covid / supporter button actions
 function openCOVID() {
     var b = document.getElementById("covidbutton");
     if (b.innerHTML === "Show More") {
@@ -139,6 +139,16 @@ function openCOVID() {
         document.getElementById("covidbutton").innerHTML = "Show More";
     }
 }
+function openSupport() {
+    var b = document.getElementById("supportButton");
+    if (b.innerHTML === "Show More") {
+        document.getElementById("namelist").style.display = "inherit";
+        document.getElementById("supportButton").innerHTML = "Show Less";
+    } else {
+        document.getElementById("namelist").style.display = "none";
+        document.getElementById("supportButton").innerHTML = "Show More";
+    }
+}
     
 //Function for setting the colors of the images on hover
 function hover(element, replacement) {
@@ -146,17 +156,44 @@ function hover(element, replacement) {
 }
 
 //All the modal stuff
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
+var modals = document.getElementsByClassName("modal");
+var btns = document.getElementsByClassName("myBtn");
+var spans = document.getElementsByClassName("close");
+btns[0].onclick = function() {
+    modals[0].style.display = "block";
 }
-span.onclick = function() {
-    modal.style.display = "none";
+btns[1].onclick = function() {
+    modals[1].style.display = "block";
+}
+btns[2].onclick = function() {
+    modals[2].style.display = "block";
+}
+btns[3].onclick = function() {
+    modals[3].style.display = "block";
+}
+spans[0].onclick = function() {
+    modals[0].style.display = "none";
+}
+spans[1].onclick = function() {
+    modals[1].style.display = "none";
+}
+spans[2].onclick = function() {
+    modals[2].style.display = "none";
+}
+spans[3].onclick = function() {
+    modals[3].style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+    }
+    if (event.target == modal[1]) {
+        modal[1].style.display = "none";
+    }
+    if (event.target == modal[2]) {
+        modal[2].style.display = "none";
+    }
+    if (event.target == modal[3]) {
+        modal[3].style.display = "none";
     }
 }

@@ -128,7 +128,7 @@ h2, h3, h4 {
     font-family: robotoLight;
 }
 p {
-    font-size: min(140%, 2vw);
+    font-size: max(20px, 2vw);
     font-family: robotoLight;
 }
 h1 {
@@ -174,7 +174,8 @@ h1 {
 #artists {
     background-color: rgba(52,68,134,1);
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 5vw;
+    padding-top: 2vw;
     text-align: center;
 }
 
@@ -213,6 +214,14 @@ h1 {
     height: auto;
     padding-bottom: 20px;
 }
+.supertitle {
+    color: white;
+    text-align: center;
+    font-size: 2.7vw;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0;
+}
 
 #summer h3 {
     width: 80%;
@@ -220,18 +229,19 @@ h1 {
     color: white;
     font-size: min(1.9vw, 20px);
     margin: 0 auto;
-    padding: 0;
+    padding: 10px 0 0;
 }
 
 .shows {
     width: min(85%, 100vh);
     background-color: rgba(255,255,255,0.1);
-    height: 138px;
+    height: min(12vw, 138px);
+    min-height: 90px;
     padding-bottom: 5px;
     margin: 20px auto;
 }
 .shows p {
-    font-size: min(auto, 1.5vw);
+    font-size: max(1.5vw, 15px);
     margin-bottom: 9px;
     margin-top: 7px;
 }
@@ -240,10 +250,10 @@ h1 {
     padding: 0px;
     white-space: nowrap;
     font-size: max(1.4vw, 15px);
-    overflow: auto;
+    overflow: hidden;
 }
 .shows img {
-    height: 100%;
+    height: min(12vw, 138px);
     object-fit: cover;
     overflow: hidden;
     float: left;
@@ -253,7 +263,7 @@ h1 {
 .shows h2 {
     margin: 0;
     white-space: nowrap;
-    font-size: 300%;
+    font-size: max(2.2vw,25px);
     overflow: auto;
     padding: 14px 5px 0 0;
 }
@@ -358,9 +368,9 @@ h1 {
 }
 #donate ul {
     color: white;
-    width: 80%;
+    width: 70%;
     font-family: robotoLight;
-    font-size: 2vw;
+    font-size: min(2.5vw, 23px);
     margin: 0 auto;
 }
 #donateButton {
@@ -370,7 +380,7 @@ h1 {
     text-align: center;
     width: max(10%, 20vw);
     transition: 0.4s;
-    font-size: 150%;
+    font-size: min(2.5vw, 25px);
     border-radius: 6px;
     cursor: pointer;
     color: black;
@@ -392,8 +402,9 @@ form {
     text-align: center;
 }
 input[type=text], select, textarea {
-    margin: 0 auto 0 auto;
-    padding: 0;
+    margin: 10px auto 0 auto;
+    padding: 3px 0 3px 8px;
+    border-radius: 5px;
     width: 100%;
     font-family: monospace;
     display: block;
@@ -469,6 +480,7 @@ button:hover {
     padding: 0 20px;
     text-align: left;
     color: white;
+    display: none;
 }
 
 #current {
@@ -518,7 +530,7 @@ button:hover {
     background-color: #70bf44;
 }
 
-#covidbutton {
+#covidbutton, #supportButton {
     background-color: inherit;
     color: white;
     border: none;
@@ -592,7 +604,7 @@ button:hover {
 #buttonWrapper {
     color: white;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     display: inline-block;
     height: auto;
     padding-bottom: 0px;
@@ -614,6 +626,7 @@ button:hover {
     text-align: center;
     margin-left: 6.5%;
     padding: 15px 0;
+    font-size: max(1.6vw, 12px);
 }
 
 audio {
