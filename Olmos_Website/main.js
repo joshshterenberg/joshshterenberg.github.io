@@ -20,7 +20,7 @@ function loadFunction() {
         document.getElementById("phonemenu").style.fontSize = "4.5vw";
         document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("buttonP").style.display = "none";
-        document.getElementById("fillerImage").style.marginTop = "50px";
+        
         var l = document.getElementsByTagName("p");
         for (var i = 0; i < l.length; i++) {
             l[i].style.fontSize = "12px";
@@ -58,22 +58,38 @@ function loadFunction() {
             b[i].style.fontSize = "5vw";
             c[i].style.fontSize = "2.5vw";
         }
+        
+        //Filename splits
         var fileName = location.pathname.split("/").slice(-1);
         if (fileName == "contact.html") {
+            document.getElementById("fillerImage").style.marginTop = "50px";
             document.getElementById("subbutton").style.width = "50%";
         }
         if (fileName == "donate.html") {
             document.getElementById("liii").style.fontSize = "3.5vw";
+            document.getElementById("liii2").style.fontSize = "3.5vw";
             document.getElementById("supportTitle").style.fontSize = "8.5vw";
-            document.getElementById("letsDonate").style.fontSize = "8.5vw";
+            document.getElementById("spacerH12").style.marginTop = "60px";
             document.getElementById("donateButton").style.width = "200px";
         }
         if (fileName == "index.html") {
+            document.getElementById("fillerImage").style.marginTop = "50px";
             document.getElementById("hider").style.display = "inherit";
         }
         if (fileName == "summer.html") {
+            
             document.getElementById("recordings").getElementsByTagName("DIV")[0].style.margin = "0 auto";
             document.getElementById("recordings").getElementsByTagName("DIV")[1].style.margin = "0 auto";
+        }
+        if (fileName == "artists.html") {
+            document.getElementById("spacerH1").style.marginTop = "60px";
+        }
+        if (fileName == "current.html") {
+            document.getElementById("fillerImage").style.marginTop = "50px";
+        }
+        var p = document.getElementsByClassName("bigboy");
+        for (var i = 0; i < p.length; i++) {
+            p[i].style.fontSize = "22px";
         }
     }
 }
@@ -102,8 +118,8 @@ function scrollFunction() {
         //document.getElementById("headUL").style.float = "none";
         //document.getElementById("headUL").style.margin = "0 auto 2% auto";
         //document.getElementById("headerNav").style.marginTop = "21%";
-        document.getElementById("phonemenu").innerHTML = "Page Selector: ☰";
-        document.getElementById("phonemenu").style.margin = "3% 37% 1% 0";
+        document.getElementById("phonemenu").innerHTML = "☰";
+        document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
         document.getElementById("buttonWrapper").style.marginTop = "20px";
         document.getElementById("buttonP").style.display = "inline-block";
         for (var i = 0; i < x.length; i++) {
@@ -112,14 +128,15 @@ function scrollFunction() {
     }
 }
 
-//Actions for the mini nav bar for phones
+//Actions for the mini nav bar
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
-    //document.getElementById("header").style.marginLeft = "250px";
+    var moveBack = screen.width - 250;
+    document.getElementById("mySidebar").style.left = String(moveBack) + "px";
 }
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    //document.getElementById("header").style.marginLeft = "0";
+    document.getElementById("mySidebar").style.left = String(screen.width) + "px";
 }
 
 //Covid / supporter button actions
@@ -131,16 +148,6 @@ function openCOVID() {
     } else {
         document.getElementById("coviddetails").style.display = "none";
         document.getElementById("covidbutton").innerHTML = "Show More";
-    }
-}
-function openSupport() {
-    var b = document.getElementById("supportButton");
-    if (b.innerHTML === "Show More") {
-        document.getElementById("namelist").style.display = "inherit";
-        document.getElementById("supportButton").innerHTML = "Show Less";
-    } else {
-        document.getElementById("namelist").style.display = "none";
-        document.getElementById("supportButton").innerHTML = "Show More";
     }
 }
     

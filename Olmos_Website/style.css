@@ -1,16 +1,28 @@
 @font-face {
     font-family: robotoLight;
     src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
     font-family: robotoBold;
     src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
     font-family: cominfB;
     src: url(fonts/CormorantInfant-Bold.ttf);
+}
+@font-face {
     font-family: cominfBI;
     src: url(fonts/CormorantInfant-BoldItalic.ttf);
+}
+@font-face {
     font-family: cominfM;
     src: url(fonts/CormorantInfant-Medium.ttf);
+}
+@font-face {
     font-family: cominf;
     src: url(fonts/CormorantInfant-Regular.ttf);
+}
+@font-face {
     font-family: cominfSB;
     src: url(fonts/CormorantInfant-SemiBold.ttf);
 }
@@ -132,6 +144,7 @@ h2, h3, h4 {
 }
 #current h2 {
     font-size: 2.9vw;
+    font-family: cominfM;
     padding-top: 50px;
     margin-top: -20px;
 }
@@ -163,7 +176,7 @@ h1 {
 }
 #about p {
     margin: 0 auto;
-    padding: 0 0 50px;
+    padding: 0 0 30px;
     width: 57%;
     line-height: 1.5em;
     color: white;
@@ -172,7 +185,7 @@ h1 {
 
 .testimonials {
     text-align: center;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(50,50,50,1);
     width: 100%;
     height: auto;
     text-align: center;
@@ -182,15 +195,17 @@ h1 {
 .testimonials h4, .testimonials2 h4 {
     color: white;
     margin-top: 5px;
-    padding-bottom: 15px;
-    font-size: min(1.5vw, 100%);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-size: max(1.5vw, 10px);
+    font-family: robotoLight;
 }
 .testimonials h3 {
     color: white;
     font-size: min(2.2vw, 140%);
     margin: 0;
     padding: 30px 0 5px 0;
-    font-family: cominfBI;
+    font-family: cominf;
     font-size: 3vw;
 }
 #artists {
@@ -203,23 +218,27 @@ h1 {
 
 .smallPics {
     display: inline-block;
-    margin: 0 0.6vw;
-    padding: 0;
-    width: 12%;
+    margin: 0 2.4vw;
+    padding: 0 0 25px;
+    width: 20%;
     height: 30%;
 }
 
 .smallPics img {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
 }
 
 .name {
-    color: white;
-    margin: 0;
-    font-size: 1.4vw;
+    color: #70bf44;
+    margin: 0 auto;
+    font-size: 2vw;
+    font-family: cominf;
+}
+.name:hover {
+    color: #faaa69;
 }
 .name a {
     cursor: pointer;
@@ -227,7 +246,8 @@ h1 {
 
 .instrumentName {
     margin: 0;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    font-family: robotoLight;
     color: white;
 }
 
@@ -243,6 +263,7 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 5px 0 20px;
+    font-family: cominf;
 }
 
 #summer h3 {
@@ -252,6 +273,7 @@ h1 {
     font-size: min(1.9vw, 20px);
     margin: 0 auto;
     padding: 10px 0 0;
+    font-family: robotoLight;
 }
 
 .shows {
@@ -275,7 +297,8 @@ h1 {
     overflow: hidden;
 }
 .shows img {
-    height: min(12vw, 138px);
+    height: inherit;
+    min-height: 90px;
     object-fit: cover;
     overflow: hidden;
     float: left;
@@ -361,7 +384,7 @@ h1 {
 }
 
 #donors {
-    background-color: rgb(50,50,50);
+    background-color: rgb(0,0,0);
     text-align: center;
     height: auto;
     padding-bottom: 20px;
@@ -370,7 +393,8 @@ h1 {
     color: white;
     font-size: 3.5vw;
     padding-top: 4vw;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
+    font-family: cominf;
 }
 
 .row {
@@ -386,24 +410,33 @@ h1 {
     height: auto;
     padding-bottom: 20px;
 }
-#donate p, #donate h2 {
+#donate p {
     width: 70%;
     color: white;
     line-height: 1.3em;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 10px;
+    font-size: 1.6vw;
+}
+#donate h2 {width: 70%;
+    color: white;
+    line-height: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 2.3vw;
 }
 #donate ul {
     color: white;
     width: 70%;
     font-family: robotoLight;
-    font-size: min(2.5vw, 23px);
+    font-size: min(1.5vw);
     margin: 0 auto;
 }
-#donateButton {
+#donateButton, #donateButton2 {
     background-color: #70bf44;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 15px 5px;
     text-align: center;
     width: max(10%, 20vw);
@@ -413,7 +446,7 @@ h1 {
     cursor: pointer;
     color: black;
 }
-#donateButton:hover {
+#donateButton:hover, #donateButton2:hover {
     background-color: #faaa69;
 }
 
@@ -431,8 +464,7 @@ form {
 }
 input[type=text], select, textarea {
     margin: 10px auto 0 auto;
-    padding: 3px 0 3px 8px;
-    border-radius: 5px;
+    padding: 15px 0 15px 8px;
     width: 100%;
     font-family: monospace;
     display: block;
@@ -456,8 +488,8 @@ input[type=submit]:hover {
     background-color: #faaa69;
 }
 #navPics2 img {
-    width: 2.3%;
-    margin: 0 1.5%;
+    width: max(2.3%, 35px);
+    margin: 0 max(1.5%, 20px);
     height: auto;
 }
 
@@ -508,7 +540,6 @@ button:hover {
     padding: 0 20px;
     text-align: left;
     color: white;
-    display: none;
 }
 
 #current {
@@ -518,6 +549,9 @@ button:hover {
     height: auto;
     padding-bottom: 30px;
 }
+#current p {
+    font-family: robotoLight;
+}
 
 .sidebar {
     height: 100%;
@@ -525,7 +559,7 @@ button:hover {
     position: fixed;
     z-index: 9;
     top: 0;
-    left: 0;
+    left: 100%;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -558,14 +592,17 @@ button:hover {
     background-color: #70bf44;
 }
 
-#covidbutton, #supportButton {
+#covidbutton {
     background-color: inherit;
+    display: block;
     color: white;
     border: none;
     width: auto; 
     padding: 5px 10px; 
+    border: 1px solid white;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 10px auto 0;
+    text-align: center;
 }
 #covidbutton:hover {
     color: #70bf44;
@@ -574,6 +611,8 @@ button:hover {
 #coviddetails {
     width: 90%;
     margin: 0 auto;
+    color: white;
+    font-size: max(1.3vw, 13px);
 }
 
 
@@ -594,7 +633,7 @@ button:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 55px;
     left: 0;
     top: 0;
     width: 100%;
@@ -605,13 +644,31 @@ button:hover {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgba(0, 118, 163, 1);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    overflow: auto;
     width: 80%;
+    max-height: 80%;
+    text-align: center;
     animation-name: animatetop;
     animation-duration: 0.4s;
+}
+.modal-content p, .modal-content h3 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    width: 55%;
+    margin: 0 auto;
+}
+.modal-content p {
+    font-size: 1.3vw;
+}
+.modal-content h2 {
+    color: white;
+    font-size: max(20px, 3.5vw);
 }
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
@@ -623,9 +680,12 @@ button:hover {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    top: 10%;
+    right: 12%;
 }
 .close:hover, .close:focus {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     cursor: pointer;
 }
@@ -639,7 +699,7 @@ button:hover {
 }
 
 #phonemenu {
-    margin: 3% 37% 1% 0;
+    margin: 5px 3vw 0 0;
     padding: 4px 13px 5px 13px;
     font-size: 3vw;
     float: right;
@@ -650,11 +710,15 @@ button:hover {
 
 #buttonP {
     display: inline-block;
-    width: 85%;
+    font-family: cominf;
+    width: 50%;
     text-align: center;
-    margin-left: 6.5%;
+    margin-left: 25%;
     padding: 15px 0;
     font-size: max(1.6vw, 12px);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 audio {
@@ -680,4 +744,14 @@ audio {
 
 .bigboy {
     font-size: min(3.5vw, 65px);
+}
+
+#mySidebar a:hover {
+    color: white;
+}
+
+
+
+.lefty {
+    text-align: left;
 }
