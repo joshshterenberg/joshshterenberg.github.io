@@ -66,11 +66,15 @@ function loadFunction() {
             document.getElementById("liii").style.fontSize = "3.5vw";
             document.getElementById("supportTitle").style.fontSize = "8.5vw";
             document.getElementById("letsDonate").style.fontSize = "8.5vw";
+            document.getElementById("donateButton").style.width = "200px";
         }
-        document.getElementById("recordings").getElementsByTagName("DIV")[0].style.margin = "0 auto";
-        document.getElementById("recordings").getElementsByTagName("DIV")[1].style.margin = "0 auto";
-        document.getElementById("donateButton").style.width = "200px";
-        document.getElementById("hider").style.display = "inherit";
+        if (fileName == "index.html") {
+            document.getElementById("hider").style.display = "inherit";
+        }
+        if (fileName == "summer.html") {
+            document.getElementById("recordings").getElementsByTagName("DIV")[0].style.margin = "0 auto";
+            document.getElementById("recordings").getElementsByTagName("DIV")[1].style.margin = "0 auto";
+        }
     }
 }
 
@@ -117,42 +121,6 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     //document.getElementById("header").style.marginLeft = "0";
 }
-
-//Actions to randomize song samples
-//Olmos CD
-var olmosElement = document.getElementById("olmosAudio");
-var olmosSources = [
-    "audio/sound6.mp3",
-    "audio/sound7.mp3",
-    "audio/sound8.mp3"
-];
-var activeElement = Math.floor((Math.random() * olmosSources.length));
-olmosElement.src = olmosSources[activeElement];
-olmosElement.addEventListener('ended', function(e) {
-    activeElement = (++activeElement) % olmosSources.length;
-    if (activeElement === olmosSources.length) {
-        activeElement = 0;
-    }
-    olmosElement.src = olmosSources[activeElement];
-});
-//Made in France CD
-var franceElement = document.getElementById("franceAudio");
-var franceSources = [
-    "audio/sound1.mp3",
-    "audio/sound2.mp3",
-    "audio/sound3.mp3",
-    "audio/sound4.mp3",
-    "audio/sound5.mp3"
-];
-var activeFrance = Math.floor((Math.random() * franceSources.length));
-franceElement.src = franceSources[activeFrance];
-franceElement.addEventListener('ended', function(e) {
-    activeFrance = (++activeFrance) % franceSources.length;
-    if (activeFrance === franceSources.length) {
-        activeFrance = 0;
-    }
-    franceElement.src = franceSources[activeFrance];
-});
 
 //Covid / supporter button actions
 function openCOVID() {

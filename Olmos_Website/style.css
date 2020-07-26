@@ -27,6 +27,7 @@ body {
     top: 0;
     width: 100%;
     height: auto;
+    z-index: 1;
 }
 #header #logo {
     max-width: 40%;
@@ -217,10 +218,10 @@ h1 {
 .supertitle {
     color: white;
     text-align: center;
-    font-size: 2.7vw;
+    font-size: max(2.7vw, 16px);
     width: 100%;
     margin: 0;
-    padding: 20px 0 0;
+    padding: 5px 0 20px;
 }
 
 #summer h3 {
@@ -310,6 +311,10 @@ h1 {
     text-align: center;
     height: auto;
     padding-bottom: 20px;
+}
+#recordings h3 {
+    font-size: min(2vw,17px);
+    margin-bottom: 0;
 }
 #recordings h4 {
     width: 90%;
@@ -497,7 +502,7 @@ button:hover {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     top: 0;
     left: 0;
     background-color: #111;
@@ -632,7 +637,8 @@ button:hover {
 }
 
 audio {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+    z-index: 1;
 }
 
 
@@ -641,4 +647,16 @@ audio {
 
 #navPics2 {
     height: auto;
+}
+
+#lastAudio {
+    margin-bottom: 18vw;
+}
+
+#semilastAudio {
+    padding-bottom: 3vw;
+}
+
+.bigboy {
+    font-size: min(12vw, 65px);
 }
