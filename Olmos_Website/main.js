@@ -14,13 +14,13 @@ function offsetAnchor() {
 window.onload = function() {loadFunction()};
 function loadFunction() {
     if (screen.width <= 830) {
-        document.getElementById("header").style.paddingBottom = "20px";
+        document.getElementById("header").style.padding = "15px 0px";
         document.getElementById("phonemenu").style.display = "inline-block";
         document.getElementById("phonemenu").style.margin = "0 2.5vw 0 0";
         document.getElementById("phonemenu").style.fontSize = "4.5vw";
         document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("buttonP").style.display = "none";
-        document.getElementById("hider").style.display = "inherit";
+        document.getElementById("fillerImage").style.marginTop = "50px";
         var l = document.getElementsByTagName("p");
         for (var i = 0; i < l.length; i++) {
             l[i].style.fontSize = "12px";
@@ -29,26 +29,23 @@ function loadFunction() {
         for (var i = 0; i < w.length; i++){
             w[i].style.fontSize = "12px";
         }
-        //document.getElementById("headerNav").style.display = "none";
-        //document.getElementById("navPics").style.display = "none";
         var r = document.getElementsByClassName("navClass");
         for (var i = 0; i < r.length; i++) {
             r[i].style.width = "8%";
             r[i].style.margin = "0 3%";
         }
         document.getElementById("logo").style.margin = "0 auto";
-        document.getElementById("logo").style.padding = "0";
-        document.getElementById("logo").style.maxWidth = "25%";
-        document.getElementById("donateButton").style.width = "200px";
-        document.getElementById("subbutton").style.width = "50%";
+        document.getElementById("logo").style.padding = "0 0 0 10px";
+        document.getElementById("logo").style.maxWidth = "26%";
         document.getElementById("phonemenu").innerHTML = "☰";
-        document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
         document.getElementById("buttonWrapper").style.margin = "0 0 0 0";
         document.getElementById("buttonP").style.display = "none";
         var x = document.getElementsByClassName("smallPics");
         var y = document.getElementsByClassName("name");
         var z = document.getElementsByClassName("instrumentName");
         var a = document.getElementsByClassName("boys");
+        var b = document.getElementsByClassName("testText");
+        var c = document.getElementsByClassName("testName");
         for (var i = 0; i < x.length; i++) {
             x[i].style.width = "26%";
             y[i].style.fontSize = "12px";
@@ -57,6 +54,23 @@ function loadFunction() {
         for (var i = 0; i < a.length; i++) {
             a[i].style.width = "30px";
         }
+        for (var i = 0; i < b.length; i++) {
+            b[i].style.fontSize = "5vw";
+            c[i].style.fontSize = "2.5vw";
+        }
+        var fileName = location.pathname.split("/").slice(-1);
+        if (fileName == "contact.html") {
+            document.getElementById("subbutton").style.width = "50%";
+        }
+        if (fileName == "donate.html") {
+            document.getElementById("liii").style.fontSize = "3.5vw";
+            document.getElementById("supportTitle").style.fontSize = "8.5vw";
+            document.getElementById("letsDonate").style.fontSize = "8.5vw";
+        }
+        document.getElementById("recordings").getElementsByTagName("DIV")[0].style.margin = "0 auto";
+        document.getElementById("recordings").getElementsByTagName("DIV")[1].style.margin = "0 auto";
+        document.getElementById("donateButton").style.width = "200px";
+        document.getElementById("hider").style.display = "inherit";
     }
 }
 
