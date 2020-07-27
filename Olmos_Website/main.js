@@ -70,7 +70,7 @@ function loadFunction() {
             document.getElementById("spacerH12").style.marginTop = "0px";
             document.getElementById("donateButton").style.width = "200px";
         }
-        if (fileName == "index.html") {
+        if (fileName == "about.html") {
             document.getElementById("fillerImage").style.marginTop = "50px";
             document.getElementById("hider").style.display = "inherit";
         }

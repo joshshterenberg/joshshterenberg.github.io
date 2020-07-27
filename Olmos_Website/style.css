@@ -80,9 +80,6 @@ body {
     width: 40%;
     float: left;
     transition: 0.4s;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 #headerNav {
     width: 100%;
