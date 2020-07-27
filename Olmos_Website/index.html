@@ -1,101 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html class="doog" onclick="clickBody()">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" />
         <title>Olmos Ensemble | United States</title>
+        <style>
+            @font-face {
+                font-family: cominfL;
+                src: url(fonts/CormorantInfant-Regular.ttf);
+            }
+            img {
+                width: max(40%, 200px);
+                display: block;
+                height: auto;
+                margin: 10vh auto 1vh;
+                animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            p, a {
+                color: white;
+                display: block;
+                font-size: max(2vw, 15px);
+                text-align: center;
+                font-family: cominfL;
+                width: 60%;
+                margin: 0 auto max(5vw, 40px);
+                padding: 0;
+                animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            a {
+                color: #70bf44;
+                transition: 0.3s;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #faaa69;
+                cursor: pointer;
+                font-size: 2.2vw;
+            }
+            body {
+                background-color: black;
+            }
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            html {
+                cursor: pointer;
+                background-color: black;
+            }
+            #running {
+                animation: fadeInAnimation ease 1s;
+                animation-iteration-count: 1;
+                animation-fill-mode: backwards;
+                animation-direction: reverse;
+            }
+        </style>
     </head>
-    <body>
-        
-        <!-- Collapsable nav bar with title, links and small links [sidebar] -->
-        
-        <div id="mySidebar" class="sidebar" style="z-index: 10;">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html" onclick="closeNav()">About</a>
-            <a href="current.html" onclick="closeNav()">Current Events</a>
-            <a href="artists.html" onclick="closeNav()">Artists</a>
-            <a href="summer.html" onclick="closeNav()">Concert Schedule</a>
-            <!--<a href="summer.html#recordings" onclick="closeNav()">Recordings</a>-->
-            <a href="donate.html" onclick="closeNav()">Donate</a>
-            <a href="contact.html" onclick="closeNav()">Contact Us</a>
-        </div>
-        
-        <div id="header">
-            
-            <!--<nav id="headerNav">
-                <ul id="headUL">
-                    <li class="navLinks"><a href="#about">About</a></li>
-                    <li class="navLinks"><a href="#current">Current Events</a></li>
-                    <li class="navLinks"><a href="#artists">Artists</a></li>
-                    <li class="navLinks"><a href="#summer">Concert Schedule</a></li>
-                    <li class="navLinks"><a href="#recordings">Recordings</a></li>
-                    <li class="navLinks"><a href="#donors">Supporters</a></li>
-                    <li class="navLinks"><a href="#donate">Donate</a></li>
-                    <li class="navLinks"><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div id="navPics">
-                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
-                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
-                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
-                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
-                <a href="#summer"><img src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
-            </div>-->
-            <div id="buttonWrapper">
-                <a href="index.html"><img id="logo" src="images/OLMOS_logo_multicolor.png"></a>
-                <button id="phonemenu" class="openbtn" onclick="openNav()">☰</button>
-                <p id="buttonP">Honoring the tradition of chamber music in South Texas. Sharing our artistry with audiences across the region. Celebrating excellence in music through exciting and inspiring performances.</p>
-            </div>
-        </div>
-    
-        <!-- Group pic -->
-        
-        <div id="fillerImage">
-            <img src="images/E04A0483_cropped.jpg">
-        </div>
-        <!-- Testimonial 1 -->
-        
-        <div class="testimonials">
-            <h3 class="testText">"The Olmos Ensemble enlightens the San Antonio community with enchanting music of breathtaking quality and unique interpretation."</h3>
-            <h4 class="testName">- Katie McGrail</h4>
-        </div>
-        <!-- About paragraph -->
-        
-        <div id="about">
-            <h1 class="bigboy">About Olmos Ensemble</h1>
-            <p id="hider" style="display: none; padding-bottom: 10px;">Olmos Ensemble honors the tradition of chamber music in South Texas, shares its artistry with audiences across the region and celebrates excellence in music through <a href="summer.html">exciting and inspiring performances</a>!</p>
-            
-            <p>Since its founding in 1994, Olmos Ensemble has established itself as one of the premier chamber music organizations in Texas and is increasingly gaining national recognition through its world class performances, live broadcasts and recordings. Comprised of first chair players from the San Antonio Symphony and supplemented by leading musicians from across the United States</p>
-            <h3>Innovative and Inspiring</h3>
-            <p>Olmos Ensemble’s programming has won plaudits for its innovative programming, showcasing neglected works by female composers, forgotten Baroque gems and challenging contemporary pieces along side insightful interpretations of standard chamber repertoire from the 18th, 19th and 20th centuries.</p>
-            <h3>Concerts & Performances</h3>
-            <p>In addition to an annual Summer Concert Series in August and four program Regular Concert Series throughout the year, Olmos Ensemble is regularly featured in broadcast performances on Texas Public Radio and American Public Media’s <em>Performance Today</em>.</p>
-            <h3>Guest Artists</h3>
-            <p>Past Olmos Ensemble guest artists have included internationally acclaimed artists such as Vadim Gluzman, Warren Jones and John Novacek. This season we have William Wolfram, Patti Wolf, Timothy Jones, and Jeffrey Sykes join our Summer Concert Series!</p>
-            
-            <p>Executive Director: <a href="https://sasymphony.org/people/renia-piotrowski-shterenberg/">Renia Shterenberg</a> <br>Artistic Director: <a href="https://sasymphony.org/people/mark-teplitsky/">Mark Teplitsky</a><br>Founder: Mark Ackerman<br><br></p>
-            
-            <h3>Board of Directors</h3>
-            <p>Jeff Glass, M.D., President<br>Catie White, Secretary<br>James Garner, Treasurer<br>Penny Wiederhold<br>Anne Johnson<br>Mary Jane Ely</p>
-        </div>
-        
-        <!-- cpyrght -->
-        
-        <div id="cpyrght">
-            <div id="navPics2">
-                <a href="http://www.facebook.com/olmosensemble/"><img class="navClass" src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
-                <a href="http://www.instagram.com/olmosensemble"><img class="navClass" src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
-                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img class="navClass" src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
-                <a href="mailto:olmosensemble@gmail.com"><img class="navClass" src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
-                <a href="summer.html"><img class="navClass" src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
-            </div>
-            <h4>© 2020 Olmos Ensemble, All Rights Reserved.</h4>
-            
-            <p>P.O. Box 701864, San Antonio, TX, 78270<br><br>Site designed by <a href="http://www.creativej.com">Creative Juices Design, LLC</a> and developed by <a href="http://www.linkedin.com/in/joshua-shterenberg">Joshua Shterenberg</a></p>
-        </div>
-        
-        <!-- JavaScript Links -->
-        
-        <script type="text/javascript" src="main.js"></script>
+    <body class="boof">
+        <img src="images/Olmos_Logo_Multicolor.jpg">
+        <p>Honoring the tradition of chamber music in South Texas. Sharing our artistry with audiences across the region. Celebrating excellence in music through exciting and inspiring performances.</p>
+        <a href="#"><em>Welcome to Season 26...</em></a>
     </body>
+    <script>
+        function clickBody() {
+            fadeOutEffect();
+            setTimeout(function(){ window.location.href = "about.html"; }, 1000);
+            
+        }
+        function fadeOutEffect() {
+            var fadeTarget = document.getElementsByClassName("boof")[0];
+            var fadeEffect = setInterval(function () {
+                if (!fadeTarget.style.opacity) {
+                    fadeTarget.style.opacity = 1;
+                }
+                if (fadeTarget.style.opacity > 0) {
+                    fadeTarget.style.opacity -= 0.01;
+                } else {
+                    clearInterval(fadeEffect);
+                }
+            }, 15);
+            
+        }
+        document.getElementsByClassName("doog")[0].addEventListener('click', fadeOutEffect);
+    </script>
 </html>

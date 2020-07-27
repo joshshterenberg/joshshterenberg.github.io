@@ -46,6 +46,10 @@
     font-family: cominfLI;
     src: url(fonts/CormorantInfant-LightItalic.ttf);
 }
+@font-face {
+    font-family: robotoThin;
+    src: url(fonts/Roboto-Thin.ttf);
+}
 body { 
     margin: 0;
     background-color: rgba(10,10,10,1);
@@ -70,8 +74,8 @@ body {
     z-index: 1;
 }
 #header #logo {
-    max-width: 40%;
-    margin: 3% 0 1% 30%;
+    max-width: 15%;
+    margin: 0.5% 0 0.5% 2%;
     height: auto;
     width: 40%;
     float: left;
@@ -131,7 +135,7 @@ a:hover {
     margin: 10px;
 }
 #fillerImage {
-    margin-top: 28vw;
+    margin-top: 2vw;
     margin-bottom: 0;
     padding: 15px 0 0 0;
 }
@@ -210,7 +214,7 @@ h1 {
     height: auto;
     text-align: center;
     margin: 0;
-    padding: 45px 0;
+    padding: 3vw 0;
 }
 .testimonials h4, .testimonials2 h4 {
     color: white;
@@ -275,6 +279,7 @@ h1 {
     background-color: #0076a3;
     height: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 .supertitle {
     color: white;
@@ -298,7 +303,7 @@ h1 {
 .shows {
     width: min(85%, 100vh);
     background-color: rgba(255,255,255,0.1);
-    height: min(12vw, 138px);
+    height: min(13vw, 138px);
     min-height: 90px;
     padding-bottom: 5px;
     margin: 20px auto;
@@ -427,7 +432,7 @@ h1 {
 #donate {
     background-color: rgba(50,50,50,1);
     height: auto;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 #donate li {
     margin-top: 10px;
@@ -585,16 +590,17 @@ button:hover {
     z-index: 9;
     top: 0;
     left: 100%;
-    background-color: #111;
+    background-color: #000;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-family: cominfSB;
 }
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #FFF;
   display: block;
   transition: 0.3s;
 }
@@ -603,8 +609,8 @@ button:hover {
 }
 .sidebar .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 10px;
+    right: 35px;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -684,8 +690,7 @@ button:hover {
     color: white;
     margin: 0;
     padding: 0;
-    font-size: 1.5vw;
-    width: 55%;
+    width: max(55%, 300px);
     margin: 0 auto;
 }
 .modal-content p {
@@ -719,7 +724,7 @@ button:hover {
 #buttonWrapper {
     color: white;
     width: 100%;
-    margin: 20px auto 0 auto;
+    margin: 0px auto 0 auto;
     display: inline-block;
     height: auto;
     padding-bottom: 0px;
@@ -758,13 +763,17 @@ button:hover {
 audio {
     padding-bottom: 0px;
     z-index: 1;
+    border: none;
+    padding: 5px 0 20px;
+    margin: 0;
+    display: inline-block;
 }
 
 
 
 .lefty, .lefty em {
     text-align: left;
-    width: 55%;
+    width: max(55%, 300px);
     margin: 0;
     padding: 0;
 }
@@ -779,7 +788,7 @@ audio {
 }
 
 #semilastAudio {
-    padding-bottom: 3vw;
+    padding-bottom: 40px;
 }
 
 .bigboy {
@@ -787,9 +796,11 @@ audio {
     font-family: cominfL;
 }
 
-#mySidebar a:hover {
-    color: white;
-}
+
+
+
+
+
 
 
 

@@ -19,7 +19,6 @@ function loadFunction() {
         document.getElementById("phonemenu").style.margin = "0 2.5vw 0 0";
         document.getElementById("phonemenu").style.fontSize = "4.5vw";
         document.getElementById("phonemenu").innerHTML = "☰";
-        document.getElementById("buttonP").style.display = "none";
         
         var l = document.getElementsByTagName("p");
         for (var i = 0; i < l.length; i++) {
@@ -39,7 +38,6 @@ function loadFunction() {
         document.getElementById("logo").style.maxWidth = "26%";
         document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("buttonWrapper").style.margin = "0 0 0 0";
-        document.getElementById("buttonP").style.display = "none";
         var x = document.getElementsByClassName("smallPics");
         var y = document.getElementsByClassName("name");
         var z = document.getElementsByClassName("instrumentName");
@@ -68,8 +66,8 @@ function loadFunction() {
         if (fileName == "donate.html") {
             document.getElementById("liii").style.fontSize = "3.5vw";
             document.getElementById("liii2").style.fontSize = "3.5vw";
-            document.getElementById("supportTitle").style.fontSize = "8.5vw";
-            document.getElementById("spacerH12").style.marginTop = "60px";
+            document.getElementById("supportTitle").style.fontSize = "10vw";
+            document.getElementById("spacerH12").style.marginTop = "0px";
             document.getElementById("donateButton").style.width = "200px";
         }
         if (fileName == "index.html") {
@@ -77,12 +75,12 @@ function loadFunction() {
             document.getElementById("hider").style.display = "inherit";
         }
         if (fileName == "summer.html") {
-            
+            document.getElementById("spacerH13").style.marginTop = "0";
             document.getElementById("recordings").getElementsByTagName("DIV")[0].style.margin = "0 auto";
             document.getElementById("recordings").getElementsByTagName("DIV")[1].style.margin = "0 auto";
         }
         if (fileName == "artists.html") {
-            document.getElementById("spacerH1").style.marginTop = "60px";
+            document.getElementById("spacerH1").style.marginTop = "0";
         }
         if (fileName == "current.html") {
             document.getElementById("fillerImage").style.marginTop = "50px";
@@ -96,7 +94,6 @@ function loadFunction() {
 
 //Actions for minimizing the top nav bar
 function scrollFunction() {
-    var x = document.getElementsByClassName("navLinks");
     if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (screen.width > 830)) {
         document.getElementById("logo").style.maxWidth = "15%";
         document.getElementById("logo").style.margin = "0.5% 0 0.5% 2%";
@@ -107,24 +104,16 @@ function scrollFunction() {
         document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
         document.getElementById("buttonWrapper").style.marginTop = "0";
-        document.getElementById("buttonP").style.display = "none";
-        for (var i = 0; i < x.length; i++) {
-            x[i].style.fontSize = "1.2vw";
-        }
     } else if (screen.width > 830) {
-        document.getElementById("logo").style.maxWidth = "40%";
-        document.getElementById("logo").style.margin = "3% 0 1% 30%";
+        document.getElementById("logo").style.maxWidth = "15%";
+        document.getElementById("logo").style.margin = "0.5% 0 0.5% 2%";
         //document.getElementById("navPics").style.display = "inherit";
         //document.getElementById("headUL").style.float = "none";
         //document.getElementById("headUL").style.margin = "0 auto 2% auto";
         //document.getElementById("headerNav").style.marginTop = "21%";
         document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
-        document.getElementById("buttonWrapper").style.marginTop = "20px";
-        document.getElementById("buttonP").style.display = "inline-block";
-        for (var i = 0; i < x.length; i++) {
-            x[i].style.fontSize = "1.5vw";
-        }
+        document.getElementById("buttonWrapper").style.marginTop = "0px";
     }
 }
 

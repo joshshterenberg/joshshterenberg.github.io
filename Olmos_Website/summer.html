@@ -11,12 +11,18 @@
         
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html" onclick="closeNav()">About</a>
+            <a href="about.html" onclick="closeNav()">About</a>
+            <hr style="width: 80%; border: 1px solid white; background-color: white;">
             <a href="current.html" onclick="closeNav()">Current Events</a>
+            <hr style="width: 80%; border: 1px solid white; background-color: white;">
             <a href="artists.html" onclick="closeNav()">Artists</a>
+            <hr style="width: 80%; border: 1px solid white; background-color: white;">
             <a href="summer.html" onclick="closeNav()">Concert Schedule</a>
-            <!--<a href="summer.html#recordings" onclick="closeNav()">Recordings</a>-->
+            <hr style="width: 80%; border: 1px solid white; background-color: white;">
+            <a href="summer.html#recordings" onclick="closeNav()">Recordings</a>
+            <hr style="width: 80%; border: 1px solid white; background-color: white;">
             <a href="donate.html" onclick="closeNav()">Donate</a>
+            <hr style="width: 80%; border: 1px solid white; background-color: white;">
             <a href="contact.html" onclick="closeNav()">Contact Us</a>
         </div>
         
@@ -44,11 +50,11 @@
             <div id="buttonWrapper">
                 <a href="index.html"><img id="logo" src="images/OLMOS_logo_multicolor.png"></a>
                 <button id="phonemenu" class="openbtn" onclick="openNav()">☰</button>
-                <p id="buttonP">Honoring the tradition of chamber music in South Texas. Sharing our artistry with audiences across the region. Celebrating excellence in music through exciting and inspiring performances.</p>
+                
             </div>
         </div>
     
-        <h1 id="spacerH13" style="margin-top: 27vw"></h1>
+        <h1 id="spacerH13" style="margin-top: 0vw"></h1>
         
         
         <!-- summer series -->
@@ -91,7 +97,7 @@
             <div id="modalContainer">
                 <div id="myModal1" class="modal">
                     <div class="modal-content">
-                        <span class="close">CLOSE: &times;</span>
+                        <span class="close">&times;</span>
                         <h1>Season 26: <em>Virtuosos & Visionaries</em></h1>
                         <h2>Summer Concert Series</h2>
                         <hr style="width: 75%;">
@@ -134,7 +140,7 @@
                 </div>
                 <div id="myModal2" class="modal">
                     <div class="modal-content">
-                        <span class="close">CLOSE: &times;</span>
+                        <span class="close">&times;</span>
                         <h1>Season 26: <em>Virtuosos & Visionaries</em></h1>
                         <h2>Summer Concert Series</h2>
                         <hr style="width: 75%;">
@@ -204,7 +210,7 @@
                 </div>
                 <div id="myModal3" class="modal">
                     <div class="modal-content">
-                        <span class="close">CLOSE: &times;</span>
+                        <span class="close">&times;</span>
                         <h1>Season 26: <em>Virtuosos & Visionaries</em></h1>
                         <h2>Summer Concert Series</h2>
                         <hr style="width: 75%;">
@@ -268,7 +274,7 @@
                 </div>
                 <div id="myModal4" class="modal">
                     <div class="modal-content">
-                        <span class="close">CLOSE: &times;</span>
+                        <span class="close">&times;</span>
                         <h1>Season 26: <em>Virtuosos & Visionaries</em></h1>
                         <h2>Summer Concert Series</h2>
                         <hr style="width: 75%;">
@@ -344,29 +350,29 @@
         
         
         <!-- recordings -->
-        <!--
+        
         <div id="recordings">
             <h1 class="bigboy">Recordings</h1>
             <div id="cd2">
                 <img src="images/MadeInFrance_OlmosEnsemble_CASE_W139_FRONT.jpg">
                 <h2 style="color: white;">Made in France (2019) · $20</h2>
-                <h3 style="color: white;">Milhaud: Suite d'apres Corrette - I. Entree et Rondeau</h3>
+                <h3 style="color: white;">Milhaud: Suite d'apres Corrette <br>- I. Entree et Rondeau</h3>
                 <audio controls>
                     <source src="audio/sound1.mp3" type="audio/mp3">
                 </audio>
-                <h3 style="color: white;">Ravel: Sonate Posthume for violin and piano</h3>
+                <h3 style="color: white;">Ravel: <br>Sonate Posthume for violin and piano</h3>
                 <audio controls>
                     <source src="audio/sound2.mp3" type="audio/mp3">
                 </audio>
-                <h3 style="color: white;">Connesson: Techno-Parade</h3>
+                <h3 style="color: white;">Connesson: <br>Techno-Parade</h3>
                 <audio controls>
                     <source src="audio/sound3.mp3" type="audio/mp3">
                 </audio>
-                <h3 style="color: white;">Prokofiev: Five Melodies for Violin - I. Andante</h3>
+                <h3 style="color: white;">Prokofiev: Five Melodies for Violin <br>- I. Andante</h3>
                 <audio controls>
                     <source src="audio/sound4.mp3" type="audio/mp3">
                 </audio>
-                <h3 style="color: white;">Poulenc: Sextet For Piano And Winds - I. Allegro vivace</h3>
+                <h3 style="color: white;">Poulenc: Sextet For Piano And Winds <br>- I. Allegro vivace</h3>
                 <audio id="semilastAudio" controls>
                     <source src="audio/sound5.mp3" type="audio/mp3">
                 </audio>
@@ -374,15 +380,15 @@
             <div id="cd1">
                 <img src="images/CD%20cover%20Olmos_Live.jpg">
                 <h2 style="color: white;">Olmos Live (2017) · $15</h2>
-                <h3 style="color: white;">Canteloube: Rustiques - I. Pastorale</h3>
+                <h3 style="color: white;">Canteloube: Rustiques <br>- I. Pastorale</h3>
                 <audio controls>
                     <source src="audio/sound6.mp3" type="audio/mp3">
                 </audio>
-                <h3 style="color: white;">Harbison: Twilight Music - I. Con moto, flessible</h3>
+                <h3 style="color: white;">Harbison: Twilight Music <br>- I. Con moto, flessible</h3>
                 <audio controls>
                     <source src="audio/sound7.mp3" type="audio/mp3">
                 </audio>
-                <h3 style="color: white;">Reicha: Wind Quintet, Op. 99 No. 2 - I. Larghetto-Allegro</h3>
+                <h3 style="color: white;">Reicha: Wind Quintet, Op. 99 No. 2 <br>- I. Larghetto-Allegro</h3>
                 <audio id="lastAudio" controls>
                     <source src="audio/sound8.mp3" type="audio/mp3">
                 </audio>
@@ -393,7 +399,7 @@
                 <a class="prevconc" href="http://www.soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-18-2019">August 18, 2019 (1:14:43)<br></a> 
                 <a class="prevconc" href="https://soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-11-19">August 11, 2019 (1:04:56)</a></h4>
         </div>
-        -->
+        
         
         <!-- cpyrght -->
         
