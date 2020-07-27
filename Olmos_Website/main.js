@@ -17,8 +17,6 @@ function loadFunction() {
         document.getElementById("header").style.padding = "15px 0px";
         document.getElementById("phonemenu").style.display = "inline-block";
         document.getElementById("phonemenu").style.margin = "0 2.5vw 0 0";
-        document.getElementById("phonemenu").style.fontSize = "4.5vw";
-        document.getElementById("phonemenu").innerHTML = "☰";
         
         var l = document.getElementsByTagName("p");
         for (var i = 0; i < l.length; i++) {
@@ -34,9 +32,8 @@ function loadFunction() {
             r[i].style.margin = "0 3%";
         }
         document.getElementById("logo").style.margin = "0 auto";
-        document.getElementById("logo").style.padding = "0 0 0 10px";
-        document.getElementById("logo").style.maxWidth = "26%";
-        document.getElementById("phonemenu").innerHTML = "☰";
+        document.getElementById("logo").style.padding = "5px 0 0 10px";
+        document.getElementById("logo").style.maxWidth = "50%";
         document.getElementById("buttonWrapper").style.margin = "0 0 0 0";
         var x = document.getElementsByClassName("smallPics");
         var y = document.getElementsByClassName("name");
@@ -72,7 +69,6 @@ function loadFunction() {
         }
         if (fileName == "about.html") {
             document.getElementById("fillerImage").style.marginTop = "50px";
-            document.getElementById("hider").style.display = "inherit";
         }
         if (fileName == "summer.html") {
             document.getElementById("spacerH13").style.marginTop = "0";

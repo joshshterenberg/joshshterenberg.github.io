@@ -309,11 +309,13 @@ h1 {
     font-size: max(1.5vw, 15px);
     margin-bottom: 9px;
     margin-top: 7px;
+    color: white;
 }
 .shows h4 {
     margin: 0;
     padding: 0px;
     white-space: nowrap;
+    color: white;
     font-size: max(1.4vw, 15px);
     overflow: hidden;
 }
@@ -546,7 +548,7 @@ button:hover {
 
 #namelist h4 {
     font-size: 200%;
-    margin: 0 0 20px;
+    margin: 5vw 0 1vw;
     padding: 0;
 }
 #namelist p {
@@ -792,6 +794,8 @@ audio {
     font-size: min(3.5vw, 65px);
     font-family: cominfL;
 }
+
+
 
 
 
