@@ -130,25 +130,26 @@ function scrollFunction() {
 
 //Actions for the mini nav bar
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    var moveBack = screen.width - 250;
+    document.getElementById("mySidebar").style.width = "290px";
+    var moveBack = window.innerWidth - 290;
     document.getElementById("mySidebar").style.left = String(moveBack) + "px";
 }
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("mySidebar").style.left = String(screen.width) + "px";
+    document.getElementById("mySidebar").style.left = String(window.innerWidth) + "px";
 }
 
 //Covid / supporter button actions
 function openCOVID() {
     var b = document.getElementById("covidbutton");
-    if (b.innerHTML === "Show More") {
+    if (b.innerHTML === "COVID-19 live audience regulations") {
         document.getElementById("coviddetails").style.display = "inherit";
-        document.getElementById("covidbutton").innerHTML = "Show Less";
     } else {
         document.getElementById("coviddetails").style.display = "none";
-        document.getElementById("covidbutton").innerHTML = "Show More";
     }
+}
+function closeCOVID() {
+    document.getElementById("coviddetails").style.display = "none";
 }
     
 //Function for setting the colors of the images on hover

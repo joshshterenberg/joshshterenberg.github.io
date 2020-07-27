@@ -9,12 +9,12 @@
         <!-- Collapsable nav bar with title, links and small links [sidebar] -->
         
         <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html" onclick="closeNav()">About</a>
             <a href="current.html" onclick="closeNav()">Current Events</a>
             <a href="artists.html" onclick="closeNav()">Artists</a>
             <a href="summer.html" onclick="closeNav()">Concert Schedule</a>
-            <a href="summer.html#recordings" onclick="closeNav()">Recordings</a>
+            <!--<a href="summer.html#recordings" onclick="closeNav()">Recordings</a>-->
             <a href="donate.html" onclick="closeNav()">Donate</a>
             <a href="contact.html" onclick="closeNav()">Contact Us</a>
         </div>
@@ -59,13 +59,15 @@
             <h1>Contact Us</h1>
             
             <form action="action_page.php" method="post">
-                <input type="text" id="fname" name="full_name" placeholder="Your Name (ex: John Smith)">
-                <input type="text" id="femail" name="email" placeholder="Your Email (ex: john@example.com)">
+                <input type="text" id="fname" name="full_name" placeholder="Name">
+                <input type="text" id="femail" name="email" placeholder="Email">
                 <input type="text" id="subject" name="emailsubject" placeholder="Subject">
-                <textarea id="message" name="message" placeholder="Your Message" style="height: 200px; padding-top: 3px;"></textarea>
+                <textarea id="message" name="message" placeholder="Message" style="height: 200px; padding-top: 3px;"></textarea>
                 <input type="submit" id="subbutton" name="submit" value="Send">
             </form>
         </div>
+        
+        <h3 style="text-align: center; color: white;">Phone: (210) 269-1925<br>Email: <a href="mailto:olmosensemble@gmail.com">olmosensemble@gmail.com</a></h3>
         
         <!-- cpyrght -->
         
@@ -79,7 +81,7 @@
             </div>
             <h4>© 2020 Olmos Ensemble, All Rights Reserved.</h4>
             
-            <h3 style="color: white; margin: 0 auto 20px auto; padding: 0; font-size: 0.9em">P.O. Box 701864, San Antonio, TX, 78270<br><br>Site designed by <a href="http://www.creativej.com">Creative Juices Design, LLC</a> and developed by <a href="http://www.linkedin.com/in/joshua-shterenberg">Joshua Shterenberg</a></h3>
+            <p>P.O. Box 701864, San Antonio, TX, 78270<br><br>Site designed by <a href="http://www.creativej.com">Creative Juices Design, LLC</a> and developed by <a href="http://www.linkedin.com/in/joshua-shterenberg">Joshua Shterenberg</a></p>
         </div>
         
         <!-- JavaScript Links -->

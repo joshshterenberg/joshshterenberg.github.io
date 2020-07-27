@@ -15,8 +15,16 @@
     src: url(fonts/CormorantInfant-BoldItalic.ttf);
 }
 @font-face {
+    font-family: cominfI;
+    src: url(fonts/CormorantInfant-Italic.ttf);
+}
+@font-face {
     font-family: cominfM;
     src: url(fonts/CormorantInfant-Medium.ttf);
+}
+@font-face {
+    font-family: cominfMI;
+    src: url(fonts/CormorantInfant-MediumItalic.ttf);
 }
 @font-face {
     font-family: cominf;
@@ -25,6 +33,18 @@
 @font-face {
     font-family: cominfSB;
     src: url(fonts/CormorantInfant-SemiBold.ttf);
+}
+@font-face {
+    font-family: cominfSBI;
+    src: url(fonts/CormorantInfant-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: cominfL;
+    src: url(fonts/CormorantInfant-Light.ttf);
+}
+@font-face {
+    font-family: cominfLI;
+    src: url(fonts/CormorantInfant-LightItalic.ttf);
 }
 body { 
     margin: 0;
@@ -127,14 +147,14 @@ a:hover {
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding: 0 0 60px;
     
 }
 h1 {
     font-family: cominfM;
 }
 h2, h3, h4 {
-    font-family: cominfM;
+    font-family: cominfL;
 }
 #about h3 {
     margin: 0 auto;
@@ -144,7 +164,7 @@ h2, h3, h4 {
 }
 #current h2 {
     font-size: 2.9vw;
-    font-family: cominfM;
+    font-family: cominfL;
     padding-top: 50px;
     margin-top: -20px;
 }
@@ -190,7 +210,7 @@ h1 {
     height: auto;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 45px 0;
 }
 .testimonials h4, .testimonials2 h4 {
     color: white;
@@ -202,16 +222,15 @@ h1 {
 }
 .testimonials h3 {
     color: white;
-    font-size: min(2.2vw, 140%);
+    font-size: min(2.0vw, 110%);
     margin: 0;
     padding: 30px 0 5px 0;
-    font-family: cominf;
+    font-family: cominfL;
     font-size: 3vw;
 }
 #artists {
     background-color: rgba(52,68,134,1);
     height: auto;
-    padding-bottom: 5vw;
     padding-top: 2vw;
     text-align: center;
 }
@@ -247,12 +266,13 @@ h1 {
 .instrumentName {
     margin: 0;
     font-size: 1.5vw;
-    font-family: robotoLight;
+    font-family: cominfL;
     color: white;
+    padding-bottom: 40px;
 }
 
 #summer {
-    background-color: rgba(0, 118, 163, 1);
+    background-color: #0076a3;
     height: auto;
     padding-bottom: 20px;
 }
@@ -263,16 +283,15 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 5px 0 20px;
-    font-family: cominf;
+    font-family: cominfL;
 }
 
 #summer h3 {
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-size: min(1.9vw, 20px);
-    margin: 0 auto;
-    padding: 10px 0 0;
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center; 
+    color: white; 
+    font-size: max(1.5vw, 20px);
     font-family: robotoLight;
 }
 
@@ -308,7 +327,7 @@ h1 {
 .shows h2 {
     margin: 0;
     white-space: nowrap;
-    font-size: max(2.2vw,25px);
+    font-size: max(2.2vw, 18px);
     overflow: auto;
     padding: 14px 5px 0 0;
 }
@@ -325,9 +344,9 @@ h1 {
 }
 
 #season {
-    background-color: rgba(111,32,195,1);
+    background-color: #4a1582;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 #season h3 {
     width: 80%;
@@ -392,9 +411,9 @@ h1 {
 #donors h2 {
     color: white;
     font-size: 3.5vw;
-    padding-top: 4vw;
-    margin: 0 0 10px 0;
-    font-family: cominf;
+    padding-top: 2vw;
+    margin: 0 0 30px 0;
+    font-family: cominfL;
 }
 
 .row {
@@ -409,6 +428,9 @@ h1 {
     background-color: rgba(50,50,50,1);
     height: auto;
     padding-bottom: 20px;
+}
+#donate li {
+    margin-top: 10px;
 }
 #donate p {
     width: 70%;
@@ -466,7 +488,7 @@ input[type=text], select, textarea {
     margin: 10px auto 0 auto;
     padding: 15px 0 15px 8px;
     width: 100%;
-    font-family: monospace;
+    font-family: sans-serif;
     display: block;
     height: 25px;
     
@@ -506,6 +528,8 @@ button {
     font-size: 20px;
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
     background-color: #70bf44;
     transition: 0.2s;
 }
@@ -520,11 +544,12 @@ button:hover {
 
 #namelist h4 {
     font-size: 200%;
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
 }
 #namelist p {
     font-size: 100%;
+    margin: 10px 0;
 }
 
 #namelist {
@@ -669,6 +694,7 @@ button:hover {
 .modal-content h2 {
     color: white;
     font-size: max(20px, 3.5vw);
+    margin: 10px auto;
 }
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
@@ -676,16 +702,17 @@ button:hover {
 }
 
 .close {
-    color: #aaaaaa;
+    color: #FFF;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transition: 0.2s;
     position: absolute;
     top: 10%;
     right: 12%;
 }
 .close:hover, .close:focus {
-    color: #FFF;
+    color: #faaa69;
     text-decoration: none;
     cursor: pointer;
 }
@@ -703,9 +730,16 @@ button:hover {
     padding: 4px 13px 5px 13px;
     font-size: 3vw;
     float: right;
+    border: none;
+    outline: none;
     border-radius: 8px;
-    transition: 0.4s;
+    transition: 0.3s;
     width: auto;
+    background-color: black;
+}
+#phonemenu:hover {
+    color: #70bf44;
+    background-color: black;
 }
 
 #buttonP {
@@ -728,6 +762,12 @@ audio {
 
 
 
+.lefty, .lefty em {
+    text-align: left;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+}
 
 
 #navPics2 {
@@ -744,6 +784,7 @@ audio {
 
 .bigboy {
     font-size: min(3.5vw, 65px);
+    font-family: cominfL;
 }
 
 #mySidebar a:hover {
@@ -752,6 +793,6 @@ audio {
 
 
 
-.lefty {
-    text-align: left;
-}
+
+
+
