@@ -57,18 +57,18 @@ function loadFunction() {
         //Filename splits
         var fileName = location.pathname.split("/").slice(-1);
         if (fileName == "contact.html") {
-            document.getElementById("fillerImage").style.marginTop = "50px";
+            document.getElementById("fillerImage").style.marginTop = "70px";
             document.getElementById("subbutton").style.width = "50%";
         }
         if (fileName == "donate.html") {
             document.getElementById("liii").style.fontSize = "3.5vw";
             document.getElementById("liii2").style.fontSize = "3.5vw";
             document.getElementById("supportTitle").style.fontSize = "10vw";
-            document.getElementById("spacerH12").style.marginTop = "0px";
+            document.getElementById("spacerH12").style.marginTop = "15px";
             document.getElementById("donateButton").style.width = "200px";
         }
         if (fileName == "about.html") {
-            document.getElementById("fillerImage").style.marginTop = "50px";
+            document.getElementById("fillerImage").style.marginTop = "70px";
         }
         if (fileName == "summer.html") {
             document.getElementById("spacerH13").style.marginTop = "0";
@@ -76,10 +76,10 @@ function loadFunction() {
             document.getElementById("recordings").getElementsByTagName("DIV")[1].style.margin = "0 auto";
         }
         if (fileName == "artists.html") {
-            document.getElementById("spacerH1").style.marginTop = "0";
+            document.getElementById("spacerH1").style.marginTop = "30px";
         }
         if (fileName == "current.html") {
-            document.getElementById("fillerImage").style.marginTop = "50px";
+            document.getElementById("fillerImage").style.marginTop = "70px";
         }
         var p = document.getElementsByClassName("bigboy");
         for (var i = 0; i < p.length; i++) {
@@ -97,7 +97,6 @@ function scrollFunction() {
         //document.getElementById("headUL").style.float = "right";
         //document.getElementById("headUL").style.margin = "0 -5% 2% 0";
         //document.getElementById("headerNav").style.marginTop = "2.2%";
-        document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
         document.getElementById("buttonWrapper").style.marginTop = "0";
     } else if (screen.width > 830) {
@@ -107,7 +106,6 @@ function scrollFunction() {
         //document.getElementById("headUL").style.float = "none";
         //document.getElementById("headUL").style.margin = "0 auto 2% auto";
         //document.getElementById("headerNav").style.marginTop = "21%";
-        document.getElementById("phonemenu").innerHTML = "☰";
         document.getElementById("phonemenu").style.margin = "5px 3vw 0 0";
         document.getElementById("buttonWrapper").style.marginTop = "0px";
     }

@@ -32,20 +32,25 @@ if (isset($_POST['submit'])){ //Main, when submit is pressed
     if (IsInjected($from)) { //Bad value protection
         echo "Bad email value!";
         exit;
-    } else if (empty($name) || empty($visitor_email)) {
+    } else if (empty($name) || empty($from)) {
         echo "Name and email are mandatory!";
         exit;
     }
     
     $subject2 = "Copy of Your Form Submission"; //info for user copy
-    $message2 = "Here is a copy of your message, " . $full_name . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message, " . $name . "\n\n" . $_POST['message'];
     $headers2 = "From:" . $to;
     
     
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    if (mail($to,$subject,$message,$headers)) {
+        echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly. If you do not get an email response within 24 hours, please call (210) 269-1925."; //success form
+        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    } else {
+        echo "Email not sent."
+    }
     
-    echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly."; //success form
+    
+    
     
 } else {
     echo "Error: you need to submit the form!";
