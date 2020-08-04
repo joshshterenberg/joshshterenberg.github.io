@@ -557,9 +557,9 @@ button:hover {
 }
 
 #namelist {
-    -webkit-columns: 5 200px;
-    -moz-columns: 5 200px;
-    columns: 5 200px;
+    -webkit-columns: 4 240px;
+    -moz-columns: 4 240px;
+    columns: 4 240px;
     -webkit-column-gap: 4em;
     -moz-column-gap: 4em;
     column-gap: 4em;
@@ -794,6 +794,8 @@ audio {
     font-size: min(3.5vw, 65px);
     font-family: cominfL;
 }
+
+
 
 
 
