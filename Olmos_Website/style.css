@@ -163,7 +163,7 @@ h2, h3, h4 {
     font-size: min(30px, 2vw);
     color: white;
 }
-#current h2 {
+#current h2, #current2 h2 {
     font-size: 2.9vw;
     font-family: cominfL;
     padding-top: 50px;
@@ -571,7 +571,7 @@ button:hover {
     color: white;
 }
 
-#current {
+#current, #current2 {
     text-align: center;
     color: white;
     background-color: rgb(50,50,50);

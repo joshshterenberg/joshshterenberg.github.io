@@ -80,6 +80,7 @@ function loadFunction() {
         }
         if (fileName == "current.html") {
             document.getElementById("fillerImage").style.marginTop = "70px";
+            document.getElementById("current2").style.marginBottom = "-15px";
         }
         var p = document.getElementsByClassName("bigboy");
         for (var i = 0; i < p.length; i++) {
