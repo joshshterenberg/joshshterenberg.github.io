@@ -53,25 +53,11 @@
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Parity of polynomial multiplier sequences for the Chebyshev basis",
+      "publisher": "Mathematical Science Publishers",
+      "releaseDate": "2023-08-01",
+      "url": "http://dx.doi.org/10.2140/involve.2023.16.689",
+      "summary": "We demonstrate that if p maps to real numbers and is not an even function, then {p(k)} from k = 0 to infinity is not a multiplier sequence for the basis of Chebyshev polynomials of the first kind. We also give a characterization of geometric multiplier sequences for the Chebyshev basis. "
     }
   ],
   "languages": [
@@ -88,24 +74,24 @@
   ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Professor David Sperka",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "dsperka@bu.edu"
     },
     {
-      "name": "Professor John Doe",
+      "name": "Professor Jim Olsen",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "jolsen@princeton.edu"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "OCToPi",
+      "summary": "A graph-neural-network-based approach to track reconstruction in the near-axis cores of jets, for the CMSSW.",
+      "highlights": ["Particle Physics", "Deep Learning", "GNN"],
+      "startDate": "2024-01-01",
+      "endDate": "2024-05-01",
+      "url": "https://github.com/joshshterenberg/OCToPi"
     }
   ]
 }

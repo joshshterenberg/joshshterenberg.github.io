@@ -1,18 +1,17 @@
 ---
 layout: page
 title: OCToPi
-description: with background image
-img: assets/img/12.jpg
+description: A graph-neural-network-based approach to track reconstruction in the near-axis cores of jets, for the CMSSW. 
+img: assets/img/banner.jpg
 importance: 1
 category: work
 related_publications: false
 ---
 
-A graph-neural-network-based approach to track reconstruction in the near-axis cores of jets, for the CMSSW.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/banner.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
