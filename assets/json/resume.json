@@ -3,12 +3,12 @@
     "name": "Joshua Shterenberg",
     "label": "Theoretical Astrophysicist",
     "image": "",
-    "email": "jshterenberg@ias.edu",
+    "email": "jshteren@princeton.edu",
     "url": "https://joshshterenberg.github.io",
-    "summary": "Doctoral student at Princeton University studying theoretical astrophysics under Matias Zaldarriaga at the Institute of Advanced Study.",
+    "summary": "Doctoral student at Princeton University studying theoretical astrophysics under Paul Steinhardt.",
     "location": {
-      "address": "1 Einstein Drive",
-      "postalCode": "NJ 08540",
+      "address": "Jadwin Hall",
+      "postalCode": "NJ 08544",
       "city": "Princeton",
       "countryCode": "US",
       "region": "New Jersey"
@@ -24,7 +24,7 @@
       "position": "Graduate Student Researcher in Theoretical Astrophysics",
       "url": "https://ias.edu",
       "startDate": "2023-08-01",
-      "endDate": "2028-08-01",
+      "endDate": "2024-08-01",
       "summary": "Researching various aspects of black holes, including tidal dynamics, parameter estimations of gravitational waves, formal perturbations to general relativity, and more.",
       "highlights": ["General Relativity and Quantum Cosmology", "High Energy Theory", "Astrophysics"]
     }
@@ -38,7 +38,7 @@
       "studyType": "PhD",
       "startDate": "2023-08-01",
       "endDate": "2028-08-01",
-      "courses": ["General Relativity", "Quantum Field Theory", "Cosmology", "Biophysics"]
+      "courses": ["Cosmology", "General Relativity", "Astrophysics"]
     },
     {
       "institution": "Boston University, Boston, US",
@@ -52,6 +52,13 @@
     }
   ],
   "publications": [
+    {
+      "name": "Fisher Forecast of Finite-Size Effects with Future Gravitational Wave Detectors",
+      "publisher": "Mathematical Science Publishers",
+      "releaseDate": "2024-07-30",
+      "url": "https://inspirehep.net/literature/2836065",
+      "summary": "We use Fisher information theory to forecast the bounds on the finite-size effects of astrophysical compact objects with next-generation gravitational wave detectors, including the ground-based Cosmic Explorer (CE) and Einstein Telescope (ET), as well as the space-based Laser Infrared Space Antenna (LISA). Exploiting the worldline effective field theory (EFT) formalism, we first characterize three types of quadrupole finite-size effects: the spin-induced quadrupole moments, the conservative tidal deformations, and the tidal heating. We then derive the corresponding contributions to the gravitational waveform phases for binary compact objects in aligned-spin quasi-circular orbits. We separately estimate the constraints on these finite-size effects for black holes using the power spectral densities (PSDs) of the CE+ET detector network and LISA observations. For the CE+ET network, we find that the bounds on the mass-weighted spin-independent dissipation number H0H0​ are of the order O(1)O(1), while the bounds on the mass-weighted tidal Love number Λ~Λ~ are of the order O(10)O(10). For high-spin binary black holes with dimensionless spin χ≃0.8χ≃0.8, the bounds on the symmetric spin-induced quadrupole moment κsκs​ are of the order O(10−1)O(10−1). LISA observations of supermassive black hole mergers offer slightly tighter constraints on all three finite-size parameters. Additionally, we perform a Fisher analysis for a binary neutron star merger within the CE+ET network. The bounds on the tidal parameter H0H0​ and on Λ~Λ~ are around two orders of magnitude better than the current LIGO-Virgo-KAGRA (LVK) bounds."
+    }
     {
       "name": "Parity of polynomial multiplier sequences for the Chebyshev basis",
       "publisher": "Mathematical Science Publishers",
