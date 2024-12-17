@@ -17,10 +17,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD student and researcher at Princeton University, advised by Paul Steinhardt. I am currently researching numerical simulations for bouncing cosmologies and black hole perturbation theory. 
+I am a PhD student and researcher at Princeton University, advised by Paul Steinhardt. I am currently researching numerical simulations for bouncing cosmologies. 
 
-I recently worked at the Institute for Advanced Study (IAS), where I studied the post-Newtonian expansion of binary systems, using simulations therein to test the efficability of future graviational wave detectors.
+I recently worked at the Institute for Advanced Study (IAS), where I studied black hole perturbation theory and the post-Newtonian expansion of binary systems, using simulations therein to test the efficability of future graviational wave detectors.
 
-Previously, I graduated from Boston University with a B.A. in Physics and a B.S. in Computer Engineering. There I held a research position at CERN International Labs as part of the CMS Collaboration, improving the tasks of vertex reconstruction and track seed generation in the CMSSW.
+I graduated from Boston University with a B.A. in Physics and a B.S. in Computer Engineering. There I held a research position at CERN International Labs as part of the CMS Collaboration, improving the tasks of vertex reconstruction and track seed generation in the CMSSW. I also held research positions at multiple labs on campus where I lead projects on dark matter data searches, cluster job scheduling, anomaly detection in HPC systems, and more.
 
-Out of the office, you can find me tutoring on Wyzant, playing music, and otherwise hobby-experimenting.
+Out of the office, you can find me tutoring on Wyzant, operating ham radio, crocheting, and otherwise hobby-experimenting.
