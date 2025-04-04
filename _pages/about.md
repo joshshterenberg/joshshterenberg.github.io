@@ -23,4 +23,4 @@ I recently worked at the Institute for Advanced Study (IAS), where I studied bla
 
 I graduated from Boston University with a B.A. in Physics and a B.S. in Computer Engineering. There I held a research position at CERN International Labs as part of the CMS Collaboration, improving the tasks of vertex reconstruction and track seed generation in the CMSSW. I also held research positions at multiple labs on campus where I lead projects on dark matter data searches, cluster job scheduling, anomaly detection in HPC systems, and more.
 
-Out of the office, you can find me tutoring on Wyzant, operating ham radio, crocheting, and otherwise hobby-experimenting.
+Out of the office, you can find me tutoring on Wyzant, operating ham radio, crocheting, <a href='https://joshshterenberg.github.io/blog'>blogging</a>, and otherwise hobby-experimenting.
