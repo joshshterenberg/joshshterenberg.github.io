@@ -2,15 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: astro-th phd student @ <a href='https://princeton.edu'>princeton</a> & the <a href='https://ias.edu'>ias</a>.
+subtitle: cosmo-th phd student @ <a href='https://princeton.edu'>princeton</a> & the <a href='https://ias.edu'>ias</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>IAS Office: BH-05B.</p>
-    <p>Princeton Office: Jadwin 369.</p>
+    <p>Princeton Office: Jadwin 464.</p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
